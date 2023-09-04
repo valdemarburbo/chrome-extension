@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 400px;
 }
 
 input {
@@ -10,18 +11,38 @@ input {
     border: 1px solid #5f9341;
     width: 100%;
     box-sizing: border-box;
-    
 }
 
 button {
-    display: block;
+    display: inline-block;
     border-style: none;
+    border: 1px solid #5f9341;
     color: white;
     background-color: #5f9341;
     font-weight: bold;
     padding: 10px 20px;
 }
 
-button:hover {
+#delete-btn {
+    background-color: white;
+    color: #5f9341;
+}
+
+button:hover,
+#delete-btn:hover {
     background-color: #86c561;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 4px 0;
+}
+
+a {
+    color: #5f9341;
 }
